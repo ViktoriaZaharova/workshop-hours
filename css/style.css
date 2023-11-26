@@ -621,7 +621,7 @@ a.color-black:hover {
   right: 100px;
   bottom: 40px;
   background: #0e63a6;
-  padding: 20px;
+  padding: 22px 22px 22px 14px;
 }
 .fixed-btn-chat::before {
   background: rgba(14, 99, 166, 0.2);

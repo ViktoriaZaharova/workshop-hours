@@ -2,6 +2,11 @@ header {
   background: #100e16;
   color: #fff;
 }
+header .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
 .header-top {
   padding: 10px 0 14px;
@@ -43,8 +48,9 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 40px;
-  height: 24px;
+  width: 30px;
+  height: 20px;
+  margin: 0 10px 0 0;
   cursor: pointer;
 }
 .btn-burger span {
@@ -55,10 +61,10 @@ header {
   border-radius: 3px;
 }
 .btn-burger span:last-child {
-  width: 30px;
+  width: 22px;
 }
 
-.messangers-box {
+.messengers-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,7 +75,7 @@ header {
       flex-wrap: wrap;
   margin: 0 auto;
 }
-.messangers-box__icon {
+.messengers-box__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,7 +91,7 @@ header {
   height: 51px;
   padding: 10px;
 }
-.messangers-box__icon img {
+.messengers-box__icon img {
   max-height: 100%;
 }
 
@@ -145,6 +151,36 @@ header {
   width: 100%;
   height: 1px;
   background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.header-bottom .messengers-box, .header-bottom .address-box {
+  display: none;
+}
+
+.menu-close {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  display: none;
+}
+.menu-close::before, .menu-close::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  left: 10px;
+  top: 0;
+}
+.menu-close::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.menu-close::after {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 
 .menu {

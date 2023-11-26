@@ -12,10 +12,30 @@ Fancybox.bind("[data-fancybox]", {
 	// Your custom options
 });
 
+// animate scroll
+$('.go_to').click(function (e) {
+	e.preventDefault();
+	var scroll_el = $(this).attr('href');
+	if ($(scroll_el).length !== 0) {
+		$('html, body').animate({
+			scrollTop: $(scroll_el).offset().top
+		}, 500);
+	}
+	return false;
+});
+
 $('.works-gallery-slider').slick({
 	slidesToShow: 2,
 	arrows: false,
-	dots: true
+	dots: true,
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 1,
+			}
+		},
+	]
 });
 
 $('.brands-slider').slick({
@@ -46,7 +66,7 @@ $('.brands-slider').slick({
 			}
 		},
 		{
-			breakpoint: 480,
+			breakpoint: 576,
 			settings: {
 				slidesToShow: 2,
 			}
