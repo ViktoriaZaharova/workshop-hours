@@ -192,6 +192,17 @@
   .popular-question h2 {
     margin: 0 auto 30px;
   }
+  .breadcumb {
+    margin: 30px 0;
+  }
+  .content-wrapper .box-text {
+    max-width: none;
+    padding: 0;
+    width: 100%;
+  }
+  .warranty-page__img {
+    margin: 20px auto 0;
+  }
 }
 @media only screen and (max-width: 880px) {
   .header-top .phone__text {
@@ -225,6 +236,12 @@
   }
   .callback-section .form-footer .list-messangers-row li a {
     width: 100%;
+  }
+  .warranty-not {
+    padding: 80px 0;
+  }
+  .warranty-not h2 {
+    margin: 0 auto 50px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -387,6 +404,18 @@
     font-size: 24px;
     margin: 0 auto 30px;
   }
+  .footer-menu li {
+    width: 100%;
+  }
+  .warranty-page h1 {
+    margin: 0 auto 30px;
+  }
+  .warranty-not {
+    padding: 60px 0;
+  }
+  .warranty-not h2 {
+    margin: 0 auto 30px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .logo {
@@ -423,9 +452,6 @@
   .section-decor::before, .section-decor::after {
     width: 290px;
     height: 150px;
-  }
-  .footer-menu li {
-    width: 100%;
   }
 }
 @media only screen and (max-width: 420px) {

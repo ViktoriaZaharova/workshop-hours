@@ -98,6 +98,7 @@
 	.callback-box
 		margin: 0
 		max-width: 787px
+		background: linear-gradient(to top, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0.32))
 		h2
 			max-width: 470px
 			margin: 0 0 26px
@@ -242,7 +243,7 @@
 		width: 100%
 		max-width: 660px
 	h2
-		margin: 0 auto 85px	
+		margin: 0 auto 85px
 
 // works-gallery
 .works-gallery
@@ -254,10 +255,10 @@
 		margin: 0 -15px
 	.slick-track
 		display: flex
-		align-items: stretch	
+		align-items: stretch
 	.slick-slide
 		height: auto
-		padding: 0 15px		
+		padding: 0 15px
 
 .works-gallery-item
 	width: 100%
@@ -281,7 +282,7 @@
 		padding: 0 0 0 35px
 	.list-rating
 		margin: 0 0 8px auto
-		justify-content: flex-end	
+		justify-content: flex-end
 	&__name
 		padding: 0 0 18px
 		margin: 0 0 20px
@@ -296,15 +297,13 @@
 		align-items: stretch
 		justify-content: space-between
 	.photo-gallery
-		width: calc(50% - 15px)	
+		width: calc(50% - 15px)
 		height: 235px
 		@include d-flex
 		img
 			width: 100%
 			height: 100%
 			object-fit: cover
-	
-
 
 // callback-section
 .callback-section
@@ -329,7 +328,6 @@
 	box-shadow: 4.1px 2.9px 43px 0 #000, 5.7px 4px 35px 0 #000, 5.7px 4px 90px 0 #000
 	background: rgba($black, .39)
 	color: #fff
-	// mix-blend-mode: soft-light
 	max-width: 520px
 	width: 100%
 	margin: 0 0 0 auto
@@ -420,3 +418,37 @@
 			color: $accent
 	.link
 		margin: 20px 0 0
+
+// warranty page
+.warranty-page
+	padding: 0 0 186px
+	h1
+		margin: 0 auto 20px
+	&__img
+		max-width: 500px
+		@include d-flex
+		mix-blend-mode: multiply	
+		margin: 30px 0 0
+	.box-text
+		max-width: 916px
+		width: 100%	
+
+.content-wrapper
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	margin: 0 0 15px
+	.box-text
+		width: calc( 100% - 500px )
+		padding: 0 50px 0 0
+
+// warranty-not
+.warranty-not
+	padding: 100px 0 165px
+	h2
+		margin: 0 auto 70px
+	.box-text
+		max-width: 990px
+		width: 100%
+		text-align: center
+		margin: 0 auto	

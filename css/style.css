@@ -309,6 +309,10 @@ h1 {
   font-family: "Micra", sans-serif;
 }
 
+.h1 {
+  font-weight: normal;
+}
+
 h2 {
   width: 100%;
   text-align: center;
@@ -694,6 +698,38 @@ a.color-black:hover {
 }
 .list-rating li:last-of-type {
   margin: 0;
+}
+
+.breadcumb {
+  width: 100%;
+  margin: 85px 0 115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 18px;
+  color: #100e16;
+}
+.breadcumb li a {
+  color: #100e16;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.breadcumb li a::after {
+  content: ">";
+  display: inline;
+  margin: 0 5px;
+}
+.breadcumb li a:hover {
+  color: #2e283d;
 }
 
 .label-checkbox {

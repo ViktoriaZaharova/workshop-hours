@@ -135,6 +135,8 @@
 .callback-section-v2 .callback-box {
   margin: 0;
   max-width: 787px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.16)), color-stop(rgba(0, 0, 0, 0.99)), to(rgba(0, 0, 0, 0.32)));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0.32));
 }
 .callback-section-v2 .callback-box h2 {
   max-width: 470px;
@@ -600,4 +602,58 @@
 }
 .news-card .link {
   margin: 20px 0 0;
+}
+
+.warranty-page {
+  padding: 0 0 186px;
+}
+.warranty-page h1 {
+  margin: 0 auto 20px;
+}
+.warranty-page__img {
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  mix-blend-mode: multiply;
+  margin: 30px 0 0;
+}
+.warranty-page .box-text {
+  max-width: 916px;
+  width: 100%;
+}
+
+.content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 15px;
+}
+.content-wrapper .box-text {
+  width: calc(100% - 500px);
+  padding: 0 50px 0 0;
+}
+
+.warranty-not {
+  padding: 100px 0 165px;
+}
+.warranty-not h2 {
+  margin: 0 auto 70px;
+}
+.warranty-not .box-text {
+  max-width: 990px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
 }
