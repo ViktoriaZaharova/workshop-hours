@@ -5,13 +5,15 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Мастерская
+		часов</title>
 
 	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 
 	<!-- add plugins css -->
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 	<!-- add plugins css end -->
 
 	<link rel="stylesheet" href="css/style.css">
@@ -24,58 +26,717 @@
 <body>
 
 	<header>
-		<div class="container">
+		<div class="header-top">
+			<div class="container">
+				<div class="btn-burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 
+				<a href="index.html" class="logo">
+					<img src="img/logo.png" alt="">
+					<span class="logo-name">Мастерская
+						часов</span>
+				</a>
+				<div class="messangers-box">
+					<a href="tg://resolve?domain=<79688889288>" class="messenger ">
+						<span class="messangers-box__icon telegram-link"><img src="img/tg.png" alt=""></span>
+					</a>
+					<a href="https://wa.me/79688889288" class="messenger">
+						<span class="messangers-box__icon whatsapp-link"><img src="img/whatsapp.png" alt=""></span>
+					</a>
+					<a href="tel:+74951234567" class="phone messenger">
+						<span class="phone__icon messangers-box__icon"><img src="img/phone.png" alt=""></span>
+						<span class="phone__text">8 (495) 123-45-67</span>
+					</a>
+				</div>
+				<div class="address-box">
+					<img src="img/location.png" alt="">
+					<p>Москва, Открытое шоссе, 1</p>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="menu-close"></div>
+			<div class="container">
+				<nav class="nav-menu">
+					<ul class="menu my-ul">
+						<li><a href="index.html">Главная страница</a></li>
+						<li><a href="about.html">О мастерской</a></li>
+						<li><a href="quality.html">Проверка качества</a></li>
+						<li><a href="prices.html">Прайс</a></li>
+						<li class="dropdown"><a href="news.html" class="dropdown-toggle">Статьи</a>
+							<div class="dropdown-menu">
+								<a href="article.html" class="dropdown-item">Статья 1</a>
+								<a href="article.html" class="dropdown-item">Статья 2</a>
+								<a href="article.html" class="dropdown-item">Статья 3</a>
+								<a href="article.html" class="dropdown-item">Статья 4</a>
+								<a href="article.html" class="dropdown-item">Статья 5</a>
+							</div>
+						</li>
+						<li><a href="watch-polishing.html">Полировка часов</a></li>
+						<li><a href="warranty.html">Гарантии</a></li>
+						<li><a href="address.html">Наши адреса</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</header>
 
 	<main class="home">
 		<div class="container">
+			<h1>Сервисный центр <br>
+				ремонт и обслуживание часов</h1>
+			<div class="box-text">
+				<p>Наручные часы требуют регулярного ухода — профессиональной чистки и полировки, обновления изношенных
+					аксессуаров, замены
+					батарейки, а также полноценного ремонта в случае поломки часового механизма.</p>
 
+				<p>В наших мастерских производятся все виды работ по ремонту и обслуживанию кварцевых и механических наручных
+					часов. Прежде
+					чем приступить к ремонту, мы бесплатно произведём диагностику и проконсультируем вас по возникшим вопросам.
+				</p>
+			</div>
+
+			<div class="callback-box callback-box-v2">
+				<div class="form-title">Оставить заявку
+					на онлайн - оценку</div>
+
+				<form method="post" class="form">
+					<label><input type="text" placeholder="Имя" name="name"></label>
+					<label><input type="text" placeholder="+7 (___) ___-__-__" name="phone" required></label>
+					<label class="label-file">
+						<input type="file" name="file">
+						<span class="label-file__icon"><img src="img/file.png" alt=""></span>
+						<span class="label-file__text">Добавить фото</span>
+					</label>
+					<div class="form-footer">
+						<button type="submit" class="btn btn-border-white">Оставить заявку</button>
+
+						<ul class="list-messangers list-messangers-row my-ul">
+							<li><a href="#" class="whatsapp-link">
+									<img src="img/whatsapp.png" alt="">
+								</a></li>
+							<li><a href="#" class="telegram-link">
+									<img src="img/tg.png" alt="">
+								</a></li>
+						</ul>
+					</div>
+				</form>
+			</div>
 		</div>
+		<div class="home-img"><img src="img/home-img.png" alt=""></div>
 	</main>
 
-	<section class="">
+	<section class="advantages section-decor">
 		<div class="container">
+			<h2>Лучший сервис <br>
+				для наших клиентов</h2>
 
+			<div class="w-100">
+				<div class="row">
+					<div class="col-3 mb-40">
+						<div class="advantages-box">
+							<div class="advantages-box__icon"><img src="img/adv-icon1.png" alt=""></div>
+							<div class="advantages-box__body">
+								<p>Гарантийное <br>
+									и послегарантийное
+									обслуживание</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-3 mb-40">
+						<div class="advantages-box">
+							<div class="advantages-box__icon"><img src="img/adv-icon2.png" alt=""></div>
+							<div class="advantages-box__body">
+								<p>Ремонт <br>
+									разной степени
+									сложности</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-3 mb-40">
+						<div class="advantages-box">
+							<div class="advantages-box__icon"><img src="img/adv-icon3.png" alt=""></div>
+							<div class="advantages-box__body">
+								<p>Высочайшее <br>
+									качество <br>
+									по демократичной
+									цене</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-3 mb-40">
+						<div class="advantages-box">
+							<div class="advantages-box__icon"><img src="img/adv-icon4.png" alt=""></div>
+							<div class="advantages-box__body">
+								<p>Авторизация <br>
+									брендов</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
-	<section class="">
+	<section class="why-choose bg-grey">
 		<div class="container">
+			<h2>ПОЧЕМУ ВЫБИРАЮТ ИМЕННО НАС:</h2>
+			<div class="why-choose__content">
+				<ul class="list-decor my-ul">
+					<li>Мы работаем с 1991-го года.</li>
+					<li>Наши мастера прошли обучение в Швейцарии.</li>
+					<li>Современное оборудование из Швейцарии,одобренное производителями часов.</li>
+					<li>Удобное расположение 7 мастерских.</li>
+					<li>Полная гарантия юридической ответственности перед нашими клиентами.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="why-choose__img"><img src="img/why-img.jpg" alt=""></div>
+	</section>
 
+	<section class="tools-section section-decor">
+		<div class="container">
+			<h2>Наша мастерская имеет
+				самое современное оборудование
+				для диагностики и ремонта часов</h2>
+
+			<div class="w-100">
+				<div class="row">
+					<div class="col-3 mb-40">
+						<div class="tools-card"><img src="img/tools1.jpg" alt=""></div>
+					</div>
+					<div class="col-3 mb-40">
+						<div class="tools-card"><img src="img/tools2.jpg" alt=""></div>
+					</div>
+					<div class="col-3 mb-40">
+						<div class="tools-card"><img src="img/tools3.jpg" alt=""></div>
+					</div>
+					<div class="col-3 mb-40">
+						<div class="tools-card"><img src="img/tools4.jpg" alt=""></div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
-	<section class="">
+	<section class="callback-section callback-section-v2">
 		<div class="container">
+			<div class="callback-box">
+				<h2>Оставить заявку
+					на онлайн - оценку</h2>
+				<div class="box-text">
+					<p>Вы можете отправить фото ваших часов
+						на онлайн-оценку через мессенджеры,
+						так даже удобнее.</p>
+				</div>
 
+				<form method="post" class="form">
+					<label><input type="text" placeholder="Имя" name="name"></label>
+					<label><input type="text" placeholder="+7 (___) ___-__-__" name="phone" required></label>
+					<div class="form-footer">
+						<button type="submit" class="btn btn-border-white">Оставить заявку</button>
+
+						<ul class="list-messangers list-messangers-row my-ul">
+							<li><a href="#" class="whatsapp-link">
+									<img src="img/whatsapp.png" alt="">
+									<span>Написать в WhatsApp</span>
+								</a></li>
+							<li><a href="#" class="telegram-link">
+									<img src="img/tg.png" alt="">
+									<span>Написать в Telegram</span>
+								</a></li>
+						</ul>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="callback-section__img"><img src="img/callback-bg.jpg" alt=""></div>
+	</section>
+
+	<section class="brands section-decor">
+		<div class="container">
+			<h2>Часовые бренды</h2>
+
+			<div class="brands-slider">
+				<div class="slide">
+					<div class="brands-item"><img src="img/brand-logo1.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo3.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo2.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo4.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo5.svg" alt=""></div>
+				</div>
+				<div class="slide">
+					<div class="brands-item"><img src="img/brand-logo5.svg" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo2.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo1.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo3.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo4.png" alt=""></div>
+				</div>
+				<div class="slide">
+					<div class="brands-item"><img src="img/brand-logo4.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo3.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo1.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo2.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo5.svg" alt=""></div>
+				</div>
+				<div class="slide">
+					<div class="brands-item"><img src="img/brand-logo5.svg" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo2.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo1.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo3.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo4.png" alt=""></div>
+				</div>
+				<div class="slide">
+					<div class="brands-item"><img src="img/brand-logo1.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo3.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo2.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo5.svg" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo4.png" alt=""></div>
+				</div>
+				<div class="slide">
+					<div class="brands-item"><img src="img/brand-logo1.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo3.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo2.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo4.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo5.svg" alt=""></div>
+				</div>
+				<div class="slide">
+					<div class="brands-item"><img src="img/brand-logo1.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo3.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo2.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo4.png" alt=""></div>
+					<div class="brands-item"><img src="img/brand-logo5.svg" alt=""></div>
+				</div>
+			</div>
 		</div>
 	</section>
 
-	<section class="">
+	<section class="services-section bg-black">
 		<div class="container">
+			<h2>НАШИ УСЛУГИ</h2>
+			<div class="subtitle-text">
+				<p>МЫ ПРЕДОСТАВЛЯЕМ ВЕСЬ СПЕКТР УСЛУГ <br>
+					ПО ОБСЛУЖИВАНИЮ И РЕМОНТУ ВАШИХ ЧАСОВ</p>
+			</div>
 
+			<div class="table-responsive">
+				<table class="table table-price">
+					<thead>
+						<tr>
+							<th>Название</th>
+							<th>Цена</th>
+							<th>Гарантия</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Наименование услуги</td>
+							<td class="text-center">От 2990 руб</td>
+							<td>Гарантия от 6 мес.</td>
+						</tr>
+						<tr>
+							<td>Наименование услуги</td>
+							<td class="text-center">От 2990 руб</td>
+							<td>Гарантия от 6 мес.</td>
+						</tr>
+						<tr>
+							<td>Наименование услуги</td>
+							<td class="text-center">От 2990 руб</td>
+							<td>Гарантия от 6 мес.</td>
+						</tr>
+						<tr>
+							<td>Наименование услуги</td>
+							<td class="text-center">От 2990 руб</td>
+							<td>Гарантия от 6 мес.</td>
+						</tr>
+						<tr>
+							<td>Наименование услуги</td>
+							<td class="text-center">От 2990 руб</td>
+							<td>Гарантия от 6 мес.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<a href="price.html" class="btn btn-all-price btn-border-white">
+				<span>Посмотреть весь прайс</span>
+				<span class="btn-icon">
+					<img src="img/arrow-right.png" alt=""></span>
+			</a>
+		</div>
+	</section>
+
+	<section class="masters section-decor">
+		<div class="container">
+			<h2>НАШИ ЧАСОВЫЕ МАСТЕРА</h2>
+			<div class="w-100">
+				<div class="row">
+					<div class="col-3 mb-40">
+						<div class="masters-card">
+							<div class="masters-card__photo"><img src="img/master-photo.jpg" alt=""></div>
+							<div class="masters-card__body">
+								<ul class="list-rating my-ul">
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+								</ul>
+								<div class="masters-card__name">Фамилия Имя</div>
+								<div class="masters-card__position">Ведущий специалист</div>
+							</div>
+							<a href="#consultation" class="btn btn-black go_to">Получить консультацию</a>
+						</div>
+					</div>
+					<div class="col-3 mb-40">
+						<div class="masters-card">
+							<div class="masters-card__photo"><img src="img/master-photo.jpg" alt=""></div>
+							<div class="masters-card__body">
+								<ul class="list-rating my-ul">
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+								</ul>
+								<div class="masters-card__name">Фамилия Имя</div>
+								<div class="masters-card__position">Ведущий специалист</div>
+							</div>
+							<a href="#consultation" class="btn btn-black go_to">Получить консультацию</a>
+						</div>
+					</div>
+					<div class="col-3 mb-40">
+						<div class="masters-card">
+							<div class="masters-card__photo"><img src="img/master-photo.jpg" alt=""></div>
+							<div class="masters-card__body">
+								<ul class="list-rating my-ul">
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+								</ul>
+								<div class="masters-card__name">Фамилия Имя</div>
+								<div class="masters-card__position">Ведущий специалист</div>
+							</div>
+							<a href="#consultation" class="btn btn-black go_to">Получить консультацию</a>
+						</div>
+					</div>
+					<div class="col-3 mb-40">
+						<div class="masters-card">
+							<div class="masters-card__photo"><img src="img/master-photo.jpg" alt=""></div>
+							<div class="masters-card__body">
+								<ul class="list-rating my-ul">
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+								</ul>
+								<div class="masters-card__name">Фамилия Имя</div>
+								<div class="masters-card__position">Ведущий специалист</div>
+							</div>
+							<a href="#consultation" class="btn btn-black go_to">Получить консультацию</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="popular-question bg-grey">
+		<div class="container">
+			<h2>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
+			<div class="popular-question__content">
+				<ul class="list-decor my-ul">
+					<li>
+						<p><strong>Есть возможность оплатить банковской картой?</strong></p>
+						<p>Да! Во всех наших мастерских есть терминалы.</p>
+					</li>
+					<li>
+						<p><strong>При замене используете оригинальные комплектующие?</strong>
+						</p>
+						<p>В дорогих часах невозможно использование альтернативных комплектующих,за исключением батарейки или
+							ремешка.Качественный
+							результат возможно получить только с оригинальными комплектующими.В ином варианте они быстро придут в
+							негодность.</p>
+					</li>
+					<li>
+						<p><strong>Есть в наличии оригинальные брендовые ремешки?
+							</strong></p>
+						<p>Да! Есть оригинальные ремешки и браслеты для брендовых часов.</p>
+					</li>
+					<li>
+						<p><strong>Вы производите ремонт на месте или часы необходимо оставить?</strong>
+						</p>
+						<p>На месте производится только мелкое устранение дефектов:замена
+							батареек,ремешков,браслетов,стекол,полировка
+							часов,укорачивание или добавление звеньев в браслеты,обновление браслета.Все остальные услуги относятся к
+							категории
+							большого ремонта,в этом случае изделие необходимо оставить на сутки и более.</p>
+					</li>
+					<li>
+						<p><strong>Гарантируете ли вы,что в ходе работы не будет внешних повреждений часов?</strong></p>
+						<p>Сдавая часы к нам,мы не допускаем повреждения их внешнего вида.В ином случаем мы устраним их бесплатно!
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="popular-question__img"><img src="img/question-img.jpg" alt=""></div>
+	</section>
+
+	<section class="section-decor works-gallery p-80">
+		<div class="container">
+			<h2>Примеры наших работ</h2>
+			<div class="works-gallery-slider">
+				<div class="slide">
+					<div class="works-gallery-item">
+						<div class="works-gallery-item__body">
+							<div class="works-gallery-item__avatar"><img src="img/reviews-photo.jpg" alt=""></div>
+							<div class="works-gallery-item__content">
+								<ul class="list-rating my-ul">
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+								</ul>
+								<div class="works-gallery-item__name">Дмитрий</div>
+								<div class="box-text">Привет. Появилась потребность
+								заменить стекло на моем Rolex.
+								Отдал парням в мастерскую.
+								Сделали все качественно и быстро.
+								Смотрятся, как новые.
+								Спасибо за оперативность.</div>
+							</div>
+						</div>
+						<div class="works-gallery-item__gallery">
+							<a href="img/reviews1.jpg" class="photo-gallery" data-fancybox="gallery"><img src="img/reviews1.jpg"
+									alt=""></a>
+							<a href="img/reviews2.jpg" class="photo-gallery" data-fancybox="gallery"><img src="img/reviews2.jpg"
+									alt=""></a>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="works-gallery-item">
+						<div class="works-gallery-item__body">
+							<div class="works-gallery-item__avatar"><img src="img/reviews-photo.jpg" alt=""></div>
+							<div class="works-gallery-item__content">
+								<ul class="list-rating my-ul">
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+								</ul>
+								<div class="works-gallery-item__name">Дмитрий</div>
+								<div class="box-text">Привет. Появилась потребность
+									заменить стекло на моем Rolex.
+									Отдал парням в мастерскую.
+									Сделали все качественно и быстро.
+									Смотрятся, как новые.
+									Спасибо за оперативность.</div>
+							</div>
+						</div>
+						<div class="works-gallery-item__gallery">
+							<a href="img/reviews1.jpg" class="photo-gallery" data-fancybox="gallery"><img src="img/reviews1.jpg" alt=""></a>
+							<a href="img/reviews2.jpg" class="photo-gallery" data-fancybox="gallery"><img src="img/reviews2.jpg" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="works-gallery-item">
+						<div class="works-gallery-item__body">
+							<div class="works-gallery-item__avatar"><img src="img/reviews-photo.jpg" alt=""></div>
+							<div class="works-gallery-item__content">
+								<ul class="list-rating my-ul">
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+								</ul>
+								<div class="works-gallery-item__name">Дмитрий</div>
+								<div class="box-text">Привет. Появилась потребность
+									заменить стекло на моем Rolex.
+									Отдал парням в мастерскую.
+									Сделали все качественно и быстро.
+									Смотрятся, как новые.
+									Спасибо за оперативность.</div>
+							</div>
+						</div>
+						<div class="works-gallery-item__gallery">
+							<a href="img/reviews1.jpg" class="photo-gallery" data-fancybox="gallery"><img src="img/reviews1.jpg" alt=""></a>
+							<a href="img/reviews2.jpg" class="photo-gallery" data-fancybox="gallery"><img src="img/reviews2.jpg" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="works-gallery-item">
+						<div class="works-gallery-item__body">
+							<div class="works-gallery-item__avatar"><img src="img/reviews-photo.jpg" alt=""></div>
+							<div class="works-gallery-item__content">
+								<ul class="list-rating my-ul">
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+									<li><img src="img/star.svg" alt=""></li>
+								</ul>
+								<div class="works-gallery-item__name">Дмитрий</div>
+								<div class="box-text">Привет. Появилась потребность
+									заменить стекло на моем Rolex.
+									Отдал парням в мастерскую.
+									Сделали все качественно и быстро.
+									Смотрятся, как новые.
+									Спасибо за оперативность.</div>
+							</div>
+						</div>
+						<div class="works-gallery-item__gallery">
+							<a href="img/reviews1.jpg" class="photo-gallery" data-fancybox="gallery"><img src="img/reviews1.jpg" alt=""></a>
+							<a href="img/reviews2.jpg" class="photo-gallery" data-fancybox="gallery"><img src="img/reviews2.jpg" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="callback-section bg-black">
+		<div class="container">
+			<div class="callback-box">
+				<h2>Остались вопросы?</h2>
+				<div class="box-text">
+					<p>Вы можете заказать обратный звонок <br>
+						или связаться с нами через мессенджеры,
+						так даже удобнее.</p>
+				</div>
+
+				<form method="post" class="form">
+					<label><input type="text" placeholder="Имя" name="name"></label>
+					<label><input type="text" placeholder="+7 (___) ___-__-__" name="phone" required></label>
+					<button type="submit" class="btn btn-border-white">Заказать звонок</button>
+
+					<ul class="list-messangers my-ul">
+						<li><a href="#" class="whatsapp-link">
+								<img src="img/whatsapp.png" alt="">
+								<span>Написать в WhatsApp</span>
+							</a></li>
+						<li><a href="#" class="telegram-link">
+								<img src="img/tg.png" alt="">
+								<span>Написать в Telegram</span>
+							</a></li>
+					</ul>
+				</form>
+			</div>
+		</div>
+		<div class="callback-section__img"><img src="img/callback-img.png" alt=""></div>
+	</section>
+
+	<section class="news-section section-decor">
+		<div class="container">
+			<h2>Полезные материалы</h2>
+
+			<div class="w-100">
+				<div class="row">
+					<div class="col-3 mb-80">
+						<div class="news-card">
+							<a href="news.html" class="news-card__img"><img src="img/news1.jpg" alt=""></a>
+							<div class="news-card__body">
+								<a href="news.html" class="news-card__title">Название статьи</a>
+								<div class="box-text">
+									<p>С другой стороны укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие
+										в формировании существенных финансовых и административных условий.</p>
+								</div>
+								<a href="news.html" class="link color-black">Подробнее...</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-3 mb-80">
+						<div class="news-card">
+							<a href="news.html" class="news-card__img"><img src="img/news2.jpg" alt=""></a>
+							<div class="news-card__body">
+								<a href="news.html" class="news-card__title">Название статьи</a>
+								<div class="box-text">
+									<p>С другой стороны укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие
+										в формировании существенных финансовых и административных условий.</p>
+								</div>
+								<a href="news.html" class="link color-black">Подробнее...</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-3 mb-80">
+						<div class="news-card">
+							<a href="news.html" class="news-card__img"><img src="img/news3.jpg" alt=""></a>
+							<div class="news-card__body">
+								<a href="news.html" class="news-card__title">Название статьи</a>
+								<div class="box-text">
+									<p>С другой стороны укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие
+										в формировании существенных финансовых и административных условий.</p>
+								</div>
+								<a href="news.html" class="link color-black">Подробнее...</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-3 mb-80">
+						<div class="news-card">
+							<a href="news.html" class="news-card__img"><img src="img/news4.jpg" alt=""></a>
+							<div class="news-card__body">
+								<a href="news.html" class="news-card__title">Название статьи</a>
+								<div class="box-text">
+									<p>С другой стороны укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие
+										в формировании существенных финансовых и административных условий.</p>
+								</div>
+								<a href="news.html" class="link color-black">Подробнее...</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
 	<footer>
 		<div class="footer-top">
 			<div class="container">
-
+				<div class="messanger-tg">
+					<p>Телеграм</p>
+					<a href="#" target="_blank" class="messanger-tg-link">
+						<span>Подписывайтесь на наш
+							закрытый телеграм - канал</span>
+						<img src="img/tg.png" alt="">
+					</a>
+				</div>
 			</div>
 		</div>
 		<div class="footer-bottom">
 			<div class="container">
-
+				<nav class="nav-menu">
+					<ul class="footer-menu my-ul">
+						<li><a href="price.html">Прайс</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+						<li><a href="politics.html">Политика конфедициальности</a></li>
+						<li><a href="agreement.html">Пользовательское соглашение</a></li>
+					</ul>
+				</nav>
 			</div>
 		</div>
 	</footer>
+
+	<a href="#" class="fixed-btn fixed-btn-whatsapp"><img src="img/whatsapp.png" alt=""></a>
+	<a href="#" class="fixed-btn fixed-btn-chat"><img src="img/tg.png" alt=""></a>
 
 	<!-- add plugins js-->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 	<!-- add plugins js end-->
 
 	<script src="js/common.js"></script>

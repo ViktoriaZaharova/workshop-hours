@@ -1,0 +1,406 @@
+@import "vars"
+
+// home
+.home
+	padding: 105px 0 85px
+	background-image: radial-gradient(circle at 0 0, #010101, #0d0d17, #3c4151)
+	position: relative
+	z-index: 1
+	overflow: hidden
+	color: #fff
+	h1
+		margin: 0 0 46px
+		max-width: 1085px
+	.box-text
+		max-width: 577px
+
+	.container
+		flex-direction: column
+		align-items: flex-start
+
+.home-img
+	position: absolute
+	z-index: -1
+	right: 0
+	top: 119px
+
+// advantages
+.advantages
+	padding: 72px 0 147px
+	h2
+		margin: 0 auto 100px
+		max-width: 590px
+
+.advantages-box
+	text-align: center
+	text-transform: uppercase
+	&__icon
+		margin: 0 auto 35px
+		height: 99px
+		@include d-flex
+		img
+			max-height: 100%
+	&__body
+		max-width: 238px
+		margin: 0 auto
+
+// why-choose
+.why-choose
+	padding: 82px 0 206px
+	position: relative
+	z-index: 1
+	overflow: hidden
+	h2
+		margin: 0 auto 90px
+	&__img
+		position: absolute
+		right: 0
+		top: 0
+		z-index: -1
+		mix-blend-mode: multiply
+	&__content
+		max-width: 570px
+
+// tools-section
+.tools-section
+	padding: 70px 0
+
+.tools-card
+	position: relative
+	z-index: 1
+	width: 100%
+	height: 210px
+	border-radius: 5px
+	border: 2px solid #100e16
+	@include d-flex
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+		border-radius: 5px
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		border-radius: 5px
+		background: radial-gradient(ellipse at center, rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%)
+
+.callback-section-v2
+	padding: 107px 0 120px
+	.callback-box
+		margin: 0
+		max-width: 787px
+		h2
+			max-width: 470px
+			margin: 0 0 26px
+			text-align: left
+		.box-text
+			max-width: 363px
+			margin: 0 0 48px
+			text-align: left
+		.form
+			margin: 0
+			color: #fff
+			max-width: none
+			label
+				margin: 0 0 20px
+				max-width: 228px
+			[type="submit"]
+				max-width: 228px
+				margin: 0
+	.form-footer
+		margin: 36px 0 0
+	.callback-section__img
+		width: 100%
+		height: 100%
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+
+// brands
+.brands
+	padding: 70px 0 100px
+
+.brands-slider
+	.slick-slide
+		padding: 0 20px
+
+.brands-item
+	margin: 0 auto 20px
+	@include d-flex
+	height: 100px
+	img
+		max-height: 100%
+	&:last-child
+		margin: 0
+
+// services-section
+.services-section
+	padding: 80px 0 90px
+	h2
+		margin: 0 auto 27px
+	.container
+		flex-direction: column
+		align-items: center
+
+.subtitle-text
+	margin: 0 auto 56px
+	text-align: center
+	max-width: 550px
+	text-transform: uppercase
+	font-family: $title-font
+
+.btn-all-price
+	margin: 50px auto 0
+
+.table-price
+	max-width: 1140px
+	margin: 0 auto
+	thead
+		background: #2e283d
+	th, td
+		vertical-align: middle
+		border: 1px solid #fff
+		&:nth-child(2)
+			width: 360px
+	th
+		padding: 20px 0
+	thead
+		text-align: center
+		text-transform: uppercase
+	td
+		padding: 17px 50px 10px
+
+// masters
+.masters
+	padding: 90px 0
+	h2
+		margin: 0 auto 100px
+		font-size: 30px
+
+.masters-card
+	width: 100%
+	height: 100%
+	border-radius: 5px
+	background-color: #efeff1
+	padding: 39px 0 0
+	text-align: center
+	font-size: 14px
+	&__photo
+		@include d-flex
+		border-radius: 50%
+		margin: 0 auto 16px
+		width: 165px
+		height: 165px
+		overflow: hidden
+		border: solid 2px #111e06
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.list-rating
+		margin: 0 auto 13px
+		padding: 5px 0
+		justify-content: center
+		max-width: 163px
+		width: 100%
+		border-top: 1px solid #B47D22
+		border-bottom: 1px solid #B47D22
+	&__body
+		width: 100%
+		padding: 0 20px 23px
+	.btn
+		width: 100%
+
+// popular-question
+.popular-question
+	padding: 80px 0
+	position: relative
+	overflow: hidden
+	z-index: 1
+	&__img
+		position: absolute
+		right: 0
+		top: 0
+		z-index: -1
+		mix-blend-mode: multiply
+	&__content
+		max-width: 660px
+	h2
+		margin: 0 auto 85px	
+
+// works-gallery
+.works-gallery
+	h2
+		margin: 0 auto 70px
+
+.works-gallery-slider
+	.slick-list
+		margin: 0 -15px
+	.slick-track
+		display: flex
+		align-items: stretch	
+	.slick-slide
+		height: auto
+		padding: 0 15px		
+
+.works-gallery-item
+	width: 100%
+	height: 100%
+	border-radius: 5px
+	background-color: #efeff1
+	padding: 20px 30px 30px
+	&__body
+		width: 100%
+		display: flex
+		align-items: flex-start
+	&__avatar
+		width: 145px
+		height: 145px
+		border-radius: 50%
+		border: solid 2px #100e16
+		overflow: hidden
+		@include d-flex
+	&__content
+		width: calc(100% - 145px)
+		padding: 0 0 0 35px
+	.list-rating
+		margin: 0 0 8px auto
+		justify-content: flex-end	
+	&__name
+		padding: 0 0 18px
+		margin: 0 0 20px
+		border-bottom: 1px solid $black
+	.box-text
+		font-size: 14px
+		max-width: 261px
+	&__gallery
+		width: 100%
+		margin: 45px 0 0
+		display: flex
+		align-items: stretch
+		justify-content: space-between
+	.photo-gallery
+		width: calc(50% - 15px)	
+		height: 235px
+		@include d-flex
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	
+
+
+// callback-section
+.callback-section
+	position: relative
+	z-index: 1
+	overflow: hidden
+	padding: 67px 0 73px
+	&.bg-black
+		color: #fff
+	&__img
+		position: absolute
+		left: 0
+		top: 0
+		z-index: -1
+
+.callback-box
+	box-shadow: 4.1px 2.9px 43px 0 #000, 5.7px 4px 35px 0 #000, 5.7px 4px 90px 0 #000
+	background: rgba($black, .39)
+	color: #fff
+	// mix-blend-mode: soft-light
+	max-width: 520px
+	width: 100%
+	margin: 0 0 0 auto
+	padding: 30px 25px 45px
+	position: relative
+	z-index: 1
+	border-width: 1px
+	border-style: solid
+	border-image: linear-gradient(to top, rgba(255, 255, 255, 0.21), rgba(0, 86, 152, 0), rgba(#fff, .39)) 1
+	.form
+		max-width: 228px
+		width: 100%
+		margin: 0 auto
+	h2
+		font-size: 30px
+		text-align: center
+	.box-text
+		text-align: center
+		margin: 32px auto 62px
+		letter-spacing: 0.8px
+		max-width: 390px
+
+.form
+	[type='submit']
+		width: 100%
+		margin: 40px auto 0
+	.list-messangers
+		margin: 20px 0 0
+
+.form-title
+	font-size: 24px
+	font-family: $title-font
+	width: 100%
+	text-transform: uppercase
+
+.callback-box-v2
+	margin: 40px 0 0
+	max-width: 586px
+	padding: 38px 63px 36px
+	.form-title
+		max-width: 370px
+		margin: 0 0 16px
+	.form
+		margin: 0
+		max-width: none
+		label
+			max-width: 166px
+		[type='submit']
+			margin: 0
+			max-width: 244px
+
+.form-footer
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	.list-messangers-row
+		margin: 0 0 0 20px
+		width: fit-content
+
+// news
+.news-section
+	padding: 80px 0 115px
+
+.news-card
+	width: 100%
+	&__img
+		width: 100%
+		height: 210px
+		border-radius: 5px
+		background-color: #efeff1
+		@include d-flex
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 5px
+	&__body
+		width: 100%
+		padding: 30px 0 0
+	&__title
+		text-transform: uppercase
+		margin: 0 0 14px
+		color: #100e16
+		font-size: 16px
+		font-weight: bold
+		&:hover
+			color: $accent
+	.link
+		margin: 20px 0 0
