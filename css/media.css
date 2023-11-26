@@ -31,6 +31,21 @@
   .callback-box {
     background: rgba(0, 0, 0, 0.9);
   }
+  .contacts-page__map {
+    margin: 0;
+  }
+  .contacts-box {
+    margin: 0 0 30px;
+  }
+  .contacts-box:last-child {
+    margin: 0;
+  }
+  .contacts-box .h3 {
+    margin: 0 0 20px;
+  }
+  .contacts-page {
+    padding: 0 0 70px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .address-box {
@@ -202,6 +217,15 @@
   }
   .warranty-page__img {
     margin: 20px auto 0;
+  }
+  .contacts-page__content {
+    width: 100%;
+    padding: 0;
+  }
+  .contacts-page__map {
+    max-width: none;
+    height: 600px;
+    margin: 30px 0 0;
   }
 }
 @media only screen and (max-width: 880px) {
@@ -415,6 +439,9 @@
   }
   .warranty-not h2 {
     margin: 0 auto 30px;
+  }
+  .contacts-page__map {
+    height: 400px;
   }
 }
 @media only screen and (max-width: 480px) {

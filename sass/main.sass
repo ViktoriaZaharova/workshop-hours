@@ -427,11 +427,11 @@
 	&__img
 		max-width: 500px
 		@include d-flex
-		mix-blend-mode: multiply	
+		mix-blend-mode: multiply
 		margin: 30px 0 0
 	.box-text
 		max-width: 916px
-		width: 100%	
+		width: 100%
 
 .content-wrapper
 	display: flex
@@ -451,4 +451,45 @@
 		max-width: 990px
 		width: 100%
 		text-align: center
-		margin: 0 auto	
+		margin: 0 auto
+
+// contacts-page
+.contacts-page
+	padding: 0 0 120px
+	&__map
+		width: 100%
+		max-width: 683px
+		height: 425px
+		margin: 40px 0 0
+		iframe
+			width: 100%
+			height: 100%
+	&__content
+		width: calc(100% - 683px)
+		margin: 0 auto 0 0
+
+.contacts-box
+	margin: 0 0 50px
+	font-size: 18px
+	&:last-child
+		margin: 0
+	.h3
+		text-transform: uppercase
+		font-weight: 600
+		margin: 0 0 25px
+	&__it
+		width: 100%
+		display: flex
+		align-items: center
+		margin: 0 0 20px
+		&:last-child
+			margin: 0
+		img
+			margin: 0 10px 0 0
+			width: 21px
+			min-width: 21px
+			filter: brightness(0%)	
+	a.contacts-box__it
+		color: #000
+		&:hover
+			color: $accent

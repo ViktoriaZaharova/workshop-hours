@@ -33,6 +33,20 @@
 	.callback-box
 		background: rgba(#000, .9)
 
+	.contacts-page
+		&__map	
+			margin: 0
+
+	.contacts-box
+		margin: 0 0 30px
+		&:last-child
+			margin: 0
+		.h3
+			margin: 0 0 20px
+
+	.contacts-page
+		padding: 0 0 70px				
+
 @media only screen and (max-width: 992px)
 	.address-box
 		font-size: 16px
@@ -185,6 +199,14 @@
 	.warranty-page__img
 		margin: 20px auto 0		
 
+	.contacts-page
+		&__content
+			width: 100%
+			padding: 0
+		&__map
+			max-width: none
+			height: 600px
+			margin: 30px 0 0	
 
 @media only screen and (max-width: 880px)
 	.header-top
@@ -376,7 +398,11 @@
 	.warranty-not
 		padding: 60px 0
 		h2
-			margin: 0 auto 30px			
+			margin: 0 auto 30px		
+
+	.contacts-page
+		&__map
+			height: 400px			
 
 @media only screen and (max-width: 480px)
 	.logo
