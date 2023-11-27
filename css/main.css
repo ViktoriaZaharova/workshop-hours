@@ -178,6 +178,9 @@
 .brands {
   padding: 70px 0 100px;
 }
+.brands .container {
+  max-width: 1170px;
+}
 
 .brands-slider .slick-slide {
   padding: 0 20px;
@@ -560,6 +563,9 @@
 .news-section {
   padding: 80px 0 115px;
 }
+.news-section .container {
+  max-width: 1170px;
+}
 
 .news-card {
   width: 100%;
@@ -636,8 +642,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin: 0 0 15px;
 }
 .content-wrapper .box-text {
@@ -825,4 +829,202 @@
 }
 .polishing-page .box-text {
   max-width: 740px;
+}
+
+.quality-page {
+  padding: 0 0 158px;
+}
+.quality-page h1 {
+  max-width: 550px;
+  margin: 0 auto 30px;
+}
+.quality-page .warranty-page__img {
+  min-width: 851px;
+  margin: -50px -300px 0 -100px;
+}
+
+.differences {
+  padding: 95px 0 110px;
+}
+.differences h2 {
+  margin: 0 auto 100px;
+}
+
+.differences-gallery {
+  margin: 90px auto 0;
+}
+.differences-gallery span {
+  width: 47%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Micra", sans-serif;
+  color: #f00;
+  margin: 0 0 19px;
+}
+.differences-gallery span:last-child {
+  width: 53%;
+  color: #0d4300;
+}
+.differences-gallery__text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.callback-section-v3 .callback-box {
+  margin: 0;
+}
+
+.steps-section .sheme-work-box .h3 {
+  min-height: 60px;
+  margin: 0 auto 20px;
+}
+
+.news-page {
+  padding: 0 0 170px;
+}
+
+.news-box {
+  width: 100%;
+  padding: 0 0 50px;
+  margin: 0 0 50px;
+  border-bottom: 1px solid #e7e9ee;
+}
+.news-box:last-child {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.news-box__title {
+  text-transform: uppercase;
+  width: 100%;
+  color: #100e16;
+}
+.news-box__title:hover {
+  color: #2e283d;
+}
+.news-box__date {
+  color: #464646;
+  margin: 24px 0 20px;
+}
+.news-box__body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.news-box__img {
+  width: 420px;
+  height: 310px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.news-box__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.news-box__content {
+  width: calc(100% - 420px);
+  padding: 0 0 0 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.news-box__content .box-text {
+  max-height: 223px;
+  overflow: hidden;
+  margin: 0 0 20px;
+}
+.news-box .btn {
+  margin: auto 0 0;
+}
+
+.callback-section-v4 {
+  padding: 107px 0 120px;
+}
+.callback-section-v4 .callback-box h2 {
+  max-width: 530px;
+}
+
+.article-page {
+  padding: 0 0 100px;
+}
+.article-page .content-wrapper .box-text {
+  width: calc(100% - 376px);
+}
+.article-page__img {
+  max-width: 376px;
+}
+.article-page .box-text ul {
+  margin: 0 0 20px;
+}
+.article-page .box-text li {
+  margin: 0 0 10px;
+}
+.article-page .box-text li:last-child {
+  margin: 0;
+}
+
+.article-question {
+  padding: 106px 0;
+}
+.article-question .box-text strong {
+  font-weight: 600;
+}
+
+.price-page h1 {
+  max-width: 490px;
+  margin: 0 auto 100px;
+}
+.price-page .content-wrapper {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.price-page .content-wrapper .box-text {
+  width: calc(100% - 350px);
+}
+.price-page__img {
+  max-width: 350px;
+}
+
+.callback-section-v5 {
+  background: #030406;
+}
+.callback-section-v5 .callback-box {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: transparent;
 }

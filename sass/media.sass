@@ -62,6 +62,9 @@
 			min-width: auto
 			margin: 0
 
+	.news-page
+		padding: 0 0 60px
+
 @media only screen and (max-width: 992px)
 	.address-box
 		font-size: 16px
@@ -206,10 +209,12 @@
 	.breadcumb
 		margin: 30px 0
 
-	.content-wrapper .box-text
-		max-width: none
-		padding: 0
-		width: 100%
+	.content-wrapper
+		flex-wrap: wrap
+		.box-text
+			max-width: none
+			padding: 0
+			width: 100%
 
 	.warranty-page__img
 		margin: 20px auto 0
@@ -228,7 +233,38 @@
 		.warranty-page__img
 			margin: 0 auto
 		.box-text
-			max-width: none	
+			max-width: none
+
+	.callback-section-quality
+		background: #050608
+
+	.differences
+		padding: 60px 0
+		h2
+			margin: 0 auto 50px
+
+	.differences-gallery
+		margin: 50px auto 0
+
+	.news-box
+		padding: 0 0 30px
+		margin: 0 0 30px
+		&__content
+			padding: 0 0 0 20px
+
+	.article-page, .price-page
+		.content-wrapper
+			.box-text
+				width: 100%
+
+	.price-page
+		h1
+			margin: 0 auto 30px
+		&__img
+			margin: 20px auto 0	
+
+	.article-page__img
+		margin: 20px auto
 
 @media only screen and (max-width: 880px)
 	.header-top
@@ -261,8 +297,11 @@
 		h2
 			margin: 0 auto 50px
 
-	.about-page
+	.about-page, .article-page
 		padding: 0 0 60px
+
+	.article-question
+		padding: 60px 0 40px
 
 @media only screen and (max-width: 768px)
 	.fixed-btn
@@ -346,6 +385,20 @@
 			max-width: none
 		&__img
 			display: none
+
+	.sheme-work h2
+		margin: 0 auto 40px
+
+	.news-box
+		&__img
+			width: 100%
+			height: auto
+		&__content
+			padding: 0
+			width: 100%
+			margin: 20px 0 0
+		&__date
+			margin: 15px 0
 
 @media only screen and (max-width: 576px)
 	h1, h2
@@ -431,6 +484,9 @@
 	.advantages-work
 		&__img
 			opacity: 0.3
+
+	.steps-section .sheme-work-box .h3
+		min-height: auto
 
 @media only screen and (max-width: 480px)
 	.logo

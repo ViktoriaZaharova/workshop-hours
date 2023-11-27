@@ -3,6 +3,9 @@ footer {
   background: #100e16;
   padding: 40px 0 0;
 }
+footer .container {
+  max-width: 1170px;
+}
 
 .footer-top {
   margin: 0 0 35px;

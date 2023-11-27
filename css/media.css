@@ -65,6 +65,9 @@
     min-width: auto;
     margin: 0;
   }
+  .news-page {
+    padding: 0 0 60px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .address-box {
@@ -229,6 +232,10 @@
   .breadcumb {
     margin: 30px 0;
   }
+  .content-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .content-wrapper .box-text {
     max-width: none;
     padding: 0;
@@ -254,6 +261,37 @@
   }
   .polishing-page .box-text {
     max-width: none;
+  }
+  .callback-section-quality {
+    background: #050608;
+  }
+  .differences {
+    padding: 60px 0;
+  }
+  .differences h2 {
+    margin: 0 auto 50px;
+  }
+  .differences-gallery {
+    margin: 50px auto 0;
+  }
+  .news-box {
+    padding: 0 0 30px;
+    margin: 0 0 30px;
+  }
+  .news-box__content {
+    padding: 0 0 0 20px;
+  }
+  .article-page .content-wrapper .box-text, .price-page .content-wrapper .box-text {
+    width: 100%;
+  }
+  .price-page h1 {
+    margin: 0 auto 30px;
+  }
+  .price-page__img {
+    margin: 20px auto 0;
+  }
+  .article-page__img {
+    margin: 20px auto;
   }
 }
 @media only screen and (max-width: 880px) {
@@ -295,8 +333,11 @@
   .warranty-not h2 {
     margin: 0 auto 50px;
   }
-  .about-page {
+  .about-page, .article-page {
     padding: 0 0 60px;
+  }
+  .article-question {
+    padding: 60px 0 40px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -382,6 +423,21 @@
   }
   .popular-question__img {
     display: none;
+  }
+  .sheme-work h2 {
+    margin: 0 auto 40px;
+  }
+  .news-box__img {
+    width: 100%;
+    height: auto;
+  }
+  .news-box__content {
+    padding: 0;
+    width: 100%;
+    margin: 20px 0 0;
+  }
+  .news-box__date {
+    margin: 15px 0;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -476,6 +532,9 @@
   }
   .advantages-work__img {
     opacity: 0.3;
+  }
+  .steps-section .sheme-work-box .h3 {
+    min-height: auto;
   }
 }
 @media only screen and (max-width: 480px) {

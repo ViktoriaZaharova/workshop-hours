@@ -130,6 +130,8 @@
 // brands
 .brands
 	padding: 70px 0 100px
+	.container
+		max-width: 1170px
 
 .brands-slider
 	.slick-slide
@@ -391,6 +393,8 @@
 // news
 .news-section
 	padding: 80px 0 115px
+	.container
+		max-width: 1170px
 
 .news-card
 	width: 100%
@@ -436,7 +440,6 @@
 .content-wrapper
 	display: flex
 	align-items: center
-	flex-wrap: wrap
 	margin: 0 0 15px
 	.box-text
 		width: calc( 100% - 500px )
@@ -551,15 +554,14 @@
 	.box-text
 		width: 100%
 		max-width: 225px
-		margin: 0 auto	
+		margin: 0 auto
 
-.master-photo-section 
+.master-photo-section
 	padding: 75px 0 180px
-	
+
 .master-photo-gallery
 	&::before
 		display: none
-
 
 // polishing-page
 .polishing-page
@@ -570,6 +572,144 @@
 	.warranty-page__img
 		margin: 0
 		min-width: 913px
-		margin: -70px -400px -100px -100px	 
+		margin: -70px -400px -100px -100px
 	.box-text
-		max-width: 740px	
+		max-width: 740px
+
+// quality-page 
+.quality-page
+	padding: 0 0 158px
+	h1
+		max-width: 550px
+		margin: 0 auto 30px
+	.warranty-page__img
+		min-width: 851px
+		margin: -50px -300px 0 -100px
+
+.differences
+	padding: 95px 0 110px
+	h2
+		margin: 0 auto 100px
+
+.differences-gallery
+	margin: 90px auto 0
+	span
+		width: 47%
+		text-align: center
+		display: flex
+		align-items: center
+		justify-content: center
+		font-family: $title-font
+		color: #f00
+		margin: 0 0 19px
+		&:last-child
+			width: 53%
+			color: #0d4300
+	&__text
+		width: 100%
+		display: flex
+		align-items: center
+
+.callback-section-v3
+	.callback-box
+		margin: 0
+
+.steps-section
+	.sheme-work-box
+		.h3
+			min-height: 60px
+			margin: 0 auto 20px
+
+// news page
+.news-page
+	padding: 0 0 170px
+
+.news-box
+	width: 100%
+	padding: 0 0 50px
+	margin: 0 0 50px
+	border-bottom: 1px solid #e7e9ee
+	&:last-child
+		padding: 0
+		margin: 0
+		border: none
+	&__title
+		text-transform: uppercase
+		width: 100%
+		color: $black
+		&:hover
+			color: $accent
+	&__date
+		color: #464646
+		margin: 24px 0 20px
+	&__body
+		width: 100%
+		display: flex
+		align-items: stretch
+		flex-wrap: wrap
+	&__img
+		width: 420px
+		height: 310px
+		overflow: hidden
+		@include d-flex
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__content
+		width: calc(100% - 420px)
+		padding: 0 0 0 68px
+		display: flex
+		flex-direction: column
+		.box-text
+			max-height: 223px
+			overflow: hidden
+			margin: 0 0 20px
+	.btn
+		margin: auto 0 0
+
+.callback-section-v4
+	padding: 107px 0 120px
+	.callback-box
+		h2
+			max-width: 530px
+
+// article page
+.article-page
+	padding: 0 0 100px
+	.content-wrapper .box-text
+		width: calc(100% - 376px)
+	&__img
+		max-width: 376px
+	.box-text
+		ul
+			margin: 0 0 20px
+		li
+			margin: 0 0 10px
+			&:last-child
+				margin: 0
+
+.article-question
+	padding: 106px 0
+	.box-text
+		strong
+			font-weight: 600
+
+// price page
+.price-page
+	h1
+		max-width: 490px
+		margin: 0 auto 100px
+	.content-wrapper
+		align-items: flex-start
+		.box-text
+			width: calc(100% - 350px)
+	&__img
+		max-width: 350px
+
+.callback-section-v5
+	background: #030406
+	.callback-box
+		border: none
+		box-shadow: none
+		background: transparent
