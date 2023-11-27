@@ -441,6 +441,10 @@
 	.box-text
 		width: calc( 100% - 500px )
 		padding: 0 50px 0 0
+		strong
+			font-weight: 600
+		ul
+			margin: 0 0 20px
 
 // warranty-not
 .warranty-not
@@ -488,8 +492,84 @@
 			margin: 0 10px 0 0
 			width: 21px
 			min-width: 21px
-			filter: brightness(0%)	
+			filter: brightness(0%)
 	a.contacts-box__it
 		color: #000
 		&:hover
 			color: $accent
+
+// about page
+.about-page
+	padding: 0 0 96px
+	.box-text
+		max-width: 1005px
+
+.advantages-work
+	padding: 82px 0 99px
+	position: relative
+	overflow: hidden
+	z-index: 1
+	h2
+		max-width: 680px
+		margin: 0 auto 80px
+	&__content
+		max-width: 600px
+	&__img
+		position: absolute
+		right: 0
+		top: 0
+		height: 100%
+		z-index: -1
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+
+.watch-image
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	background: #050608
+
+.sheme-work
+	h2
+		margin: 0 auto 75px
+
+.sheme-work-box
+	text-align: center
+	&__icon
+		@include d-flex
+		margin: 0 auto 35px
+		height: 103px
+		img
+			max-height: 100%
+	.h3
+		text-transform: uppercase
+		margin: 0 auto 20px
+		min-height: 40px
+	.box-text
+		width: 100%
+		max-width: 225px
+		margin: 0 auto	
+
+.master-photo-section 
+	padding: 75px 0 180px
+	
+.master-photo-gallery
+	&::before
+		display: none
+
+
+// polishing-page
+.polishing-page
+	padding: 0 0 106px
+	h1
+		max-width: 550px
+		margin: 0 auto 10px
+	.warranty-page__img
+		margin: 0
+		min-width: 913px
+		margin: -70px -400px -100px -100px	 
+	.box-text
+		max-width: 740px	

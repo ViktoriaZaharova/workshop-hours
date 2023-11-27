@@ -46,6 +46,25 @@
   .contacts-page {
     padding: 0 0 70px;
   }
+  .advantages-work {
+    padding: 50px 0;
+  }
+  .advantages-work__img {
+    opacity: 0.5;
+  }
+  .advantages-work h2 {
+    margin: 0 auto 40px;
+  }
+  .polishing-page {
+    padding: 0 0 80px;
+  }
+  .polishing-page h1 {
+    margin: 0 auto 30px;
+  }
+  .polishing-page .warranty-page__img {
+    min-width: auto;
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 992px) {
   .address-box {
@@ -227,6 +246,15 @@
     height: 600px;
     margin: 30px 0 0;
   }
+  .polishing-page {
+    padding: 0 0 60px;
+  }
+  .polishing-page .warranty-page__img {
+    margin: 0 auto;
+  }
+  .polishing-page .box-text {
+    max-width: none;
+  }
 }
 @media only screen and (max-width: 880px) {
   .header-top .phone__text {
@@ -266,6 +294,9 @@
   }
   .warranty-not h2 {
     margin: 0 auto 50px;
+  }
+  .about-page {
+    padding: 0 0 60px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -442,6 +473,9 @@
   }
   .contacts-page__map {
     height: 400px;
+  }
+  .advantages-work__img {
+    opacity: 0.3;
   }
 }
 @media only screen and (max-width: 480px) {
